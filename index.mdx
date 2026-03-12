@@ -1,0 +1,106 @@
+---
+title: Introduction to PhoneClaw
+description: An Android automation framework that runs on-device workflows using ClawScript, a JavaScript-based scripting language
+---
+
+# Introduction to PhoneClaw
+
+PhoneClaw is an Android automation app that runs on-device workflows and lets you generate automation logic at runtime using **ClawScript**, a JavaScript-based scripting language built into the app.
+
+Inspired by Claude Bot/Claude Code, PhoneClaw attempts to rebuild the agent loop for Android phones natively to act as your personal assistant with access to all your apps.
+
+## What makes PhoneClaw different
+
+PhoneClaw runs entirely on your Android device using the Accessibility service. There's no cloud dependency for execution - your automations run locally with vision-assisted UI targeting powered by Moondream.
+
+<CardGroup cols={2}>
+  <Card title="Voice-driven generation" icon="microphone">
+    Generate automations with natural language commands like "open Twitter and click the blue post button every hour"
+  </Card>
+  <Card title="No root required" icon="shield-check">
+    Runs on any Android device with developer mode enabled - no rooting or complex setup needed
+  </Card>
+  <Card title="Vision-assisted targeting" icon="eye">
+    Uses Moondream vision to find and click UI elements by natural language description, adapting to different layouts
+  </Card>
+  <Card title="JavaScript-based scripting" icon="code">
+    Write automations in ClawScript, a familiar JavaScript syntax with helper functions for automation tasks
+  </Card>
+</CardGroup>
+
+## What it can do
+
+- **Automate multi-step app workflows** on Android using the Accessibility service
+- **Generate scripts at runtime** for flexible, adaptive automations
+- **Use vision-assisted UI targeting** to click controls without hardcoded coordinates
+- **Read visible on-screen text** and values for branching, validation, and handoffs
+- **Schedule automations** with cron-like timing for recurring tasks
+- **Chain actions across apps** (browser, email, media, messaging) inside a single flow
+- **Build flows that adapt** to different device sizes, layouts, and language settings
+
+## Key features
+
+### ClawScript automation engine
+
+ClawScript runs inside PhoneClaw using an embedded JS engine and exposes helper functions for automation, scheduling, and screen understanding. It's designed for fast iteration: write or generate small scripts at runtime, execute them immediately, and adjust based on UI feedback.
+
+### Vision-powered element detection
+
+Instead of fragile XPath selectors or hardcoded coordinates, PhoneClaw uses vision models to locate UI elements:
+
+- `magicClicker("Create account")` - Finds and taps any button matching the description
+- `magicScraper("The 2FA code shown in the SMS notification")` - Extracts specific text from the screen
+
+### Voice command interface
+
+Use natural language to describe what you want to automate. PhoneClaw generates the ClawScript for you, schedules it if needed, and outputs an editable file.
+
+## Real-world use cases
+
+PhoneClaw has been used to automate:
+
+- **Social media posting** - Upload videos to TikTok with songs automatically
+- **Account creation** - Create Instagram accounts with 2FA from email
+- **CAPTCHA solving** - Navigate through CAPTCHAs using vision
+- **Twitter automation** - Post tweets in a Waymo using Android XR
+- **Cross-app workflows** - Chain together browser, email, and messaging apps
+
+<Note>
+  PhoneClaw works best with workflows that involve visual UI interaction. For API-based automation, consider using traditional scripting approaches.
+</Note>
+
+## How it works
+
+1. **Enable accessibility service** - PhoneClaw uses Android's Accessibility API to interact with UI elements
+2. **Provide Moondream auth token** - Vision features require a Moondream API token for element detection
+3. **Generate or write ClawScript** - Use voice commands to generate scripts or write them manually
+4. **Execute on-device** - Scripts run locally using the embedded JavaScript engine
+5. **Schedule recurring tasks** - Set cron expressions for automations that should repeat
+
+## Get started
+
+Ready to automate your Android device?
+
+<CardGroup cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Get PhoneClaw running in 5 minutes
+  </Card>
+  <Card title="Installation" icon="download" href="/installation">
+    Step-by-step installation guide
+  </Card>
+  <Card title="ClawScript API" icon="book" href="/clawscript/api-reference">
+    Learn the ClawScript helper functions
+  </Card>
+  <Card title="Example Scripts" icon="code" href="/examples/twitter-automation">
+    See real automation examples
+  </Card>
+</CardGroup>
+
+## Community
+
+Join the PhoneClaw community to share automations, get help, and stay updated:
+
+- **Discord**: [https://discord.gg/n9nbZUrw](https://discord.gg/n9nbZUrw)
+- **YouTube**: [https://www.youtube.com/@getsuperpowers](https://www.youtube.com/@getsuperpowers)
+- **Twitter**: [PhoneClaw Community](https://x.com/i/communities/2026071470741635468)
+- **Live Demo**: [getsupers.com](https://getsupers.com)

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "PhoneClaw",
+  "theme": "aspen",
+  "colors": {
+    "primary": "#FF6B35",
+    "light": "#FF8C61",
+    "dark": "#E5501F"
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/rohanarun/phoneclaw"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/rohanarun/phoneclaw"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/clawscript",
+              "concepts/accessibility-service",
+              "concepts/vision-targeting",
+              "concepts/scheduling"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/setup-device",
+              "guides/first-automation",
+              "guides/voice-commands",
+              "guides/scheduling-tasks",
+              "guides/multi-app-workflows"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/api-keys",
+              "configuration/models",
+              "configuration/permissions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "ClawScript API",
+            "pages": [
+              "api/overview",
+              "api/speech",
+              "api/timing",
+              "api/scheduling",
+              "api/ui-automation",
+              "api/notifications"
+            ]
+          },
+          {
+            "group": "Helper Functions",
+            "pages": [
+              "api/magic-clicker",
+              "api/magic-scraper",
+              "api/utilities"
+            ]
+          },
+          {
+            "group": "Accessibility Service",
+            "pages": [
+              "api/accessibility/overview",
+              "api/accessibility/node-operations",
+              "api/accessibility/gestures"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Examples",
+        "groups": [
+          {
+            "group": "Example Workflows",
+            "pages": [
+              "examples/social-media",
+              "examples/email-automation",
+              "examples/captcha-solving",
+              "examples/account-creation",
+              "examples/media-upload"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Community",
+            "pages": [
+              "community/discord",
+              "community/contributing"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/common-issues",
+              "troubleshooting/debugging",
+              "troubleshooting/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
